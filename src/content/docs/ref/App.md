@@ -42,6 +42,11 @@ Unsubscribes from custom events and update events.
 
 IMPORTANT: Be sure to unsubscribe from update events when they are not needed. The engine is optimized to completely skip over large amounts of apps that don't need to receive update events.
 
+### `app.emit(key, value)`
+
+Emits/signals a key,value to all apps or the world.
+
+
 ### `.send(name, data, skipNetworkId)`
 
 Sends an event across the network.
@@ -66,3 +71,5 @@ TODO: provides control to a client to respond to inputs and move the camera etc
 #### `.configure(fields)`
 
 Configures custom UI for your app. See [Props](/ref/Props) for more info.
+
+
