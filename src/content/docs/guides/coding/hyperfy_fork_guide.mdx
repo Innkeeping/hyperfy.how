@@ -14,12 +14,12 @@ Hey there! 👋 We're excited that you want to contribute to Hyperfy or build yo
 
 1. First things first - fork our repository from [hyperfy-xyz/hyperfy](https://github.com/hyperfy-xyz/hyperfy)
 2. Clone your fork locally:
-   ```bash
+   ```sh frame="none"
    git clone https://github.com/YOUR_USERNAME/hyperfy.git
    cd hyperfy
    ```
 3. Add our repository as upstream (this helps you stay in sync with us):
-   ```bash
+   ```sh frame="none"
    git remote add upstream https://github.com/hyperfy-xyz/hyperfy.git
    ```
 
@@ -27,7 +27,7 @@ Hey there! 👋 We're excited that you want to contribute to Hyperfy or build yo
 
 ### Viewing Available Branches
 To see all available branches from the upstream repository:
-```bash
+```sh frame="none"
 git fetch upstream
 git branch -r
 ```
@@ -38,11 +38,11 @@ This will show you all remote branches, including:
 
 ### Creating Local Branches from Upstream
 To work on an upstream branch locally:
-```bash
+```sh frame="none"
 git checkout -b branch-name upstream/branch-name
 ```
 For example, to work on the dev branch:
-```bash
+```sh frame="none"
 git checkout -b dev upstream/dev
 ```
 
@@ -65,7 +65,7 @@ Your repository will have two remotes:
 - `upstream`: The main Hyperfy repository (where you get updates from us)
 
 You can check your remotes anytime with:
-```bash
+```sh frame="none"
 git remote -v
 ```
 
@@ -73,7 +73,7 @@ git remote -v
 
 ### The Main Branch
 Think of `main` as your clean slate. We keep it pristine and in sync with our upstream repository. It's the perfect starting point for new features and fixes. Keep it updated with:
-  ```bash
+  ```sh frame="none"
   git checkout main
   git fetch upstream
   git merge upstream/main
@@ -81,14 +81,14 @@ Think of `main` as your clean slate. We keep it pristine and in sync with our up
 
 ### Your Project Branch
 Got a cool project in mind? Create a dedicated branch for it! This is your playground where you can experiment while still keeping the option to pull updates from us. When you want to update:
-  ```bash
+  ```sh frame="none"
   git checkout my-project
   git merge main
   ```
 
 ### Feature Branches
 When contributing to Hyperfy, create feature branches from `main`. We love clear naming - think `feature/awesome-new-thing` or `fix/that-pesky-bug`. Here's how it works:
-  ```bash
+  ```sh frame="none"
   git checkout main
   git checkout -b feature/new-feature
   # Make your magic happen
@@ -100,7 +100,7 @@ When contributing to Hyperfy, create feature branches from `main`. We love clear
 
 ### For Your Projects
 When you've got something awesome ready to share:
-  ```bash
+  ```sh frame="none"
   git tag -a v1.0.0 -m "First stable release - it's alive!"
   git push origin v1.0.0
   ```
@@ -131,7 +131,7 @@ Keep your feature branches fresh and up-to-date with main. A clean history makes
 ## Common Workflows 🛠️
 
 ### Contributing to Hyperfy
-```bash
+```sh frame="none"
 # Start fresh with our latest changes
 git checkout main
 git fetch upstream
@@ -151,7 +151,7 @@ git push origin feature/your-feature
 ```
 
 ### Building Your Project
-```bash
+```sh frame="none"
 # Create your project space
 git checkout -b my-project
 
@@ -165,7 +165,7 @@ git push origin v1.0.0
 ```
 
 ### Keeping Your Project Updated
-```bash
+```sh frame="none"
 # Get the latest from us
 git checkout main
 git fetch upstream
