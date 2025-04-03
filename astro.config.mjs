@@ -154,6 +154,7 @@ export default defineConfig({
 								{ label: 'Coding Resources', slug: 'guides/coding' },
 								{ label: 'Coding with AI', slug: 'guides/coding/ai' },
 								{ label: 'AI Super Prompts', slug: 'guides/coding/ai-prompts' },
+								{ label: 'Fork Guide', slug: 'guides/coding/hyperfy_fork_guide' },
 							],
 						},
 
