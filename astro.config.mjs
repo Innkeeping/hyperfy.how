@@ -11,7 +11,7 @@ export default defineConfig({
 			editLink: {
 				baseUrl: 'https://github.com/Innkeeping/Hyperfy.how/edit/main/',
 			},
-			title: 'Hyperfy.how',
+			title: 'hyperfy.how',
 			logo: {
         src: './src/assets/hyperfy-logo.svg',
       },
@@ -30,9 +30,51 @@ export default defineConfig({
 				{
 					label: 'Welcome',
 					items: [
-						{ label: 'Contribute to Docs', slug: 'welcome/contribute' },
 						{ label: 'What is Hyperfy?', slug: 'welcome/what-is-hyperfy' },
-						{ label: 'History of Hyperfy', slug: 'welcome/hyperfy-history' },
+						{ label: 'Quick Start👩‍💻🚀 ', slug: 'welcome/quickstart' },
+						{ label: 'Detailed Installation 👶🤝', slug: 'welcome/detailed' },
+						{ label: 'Contribute to Docs', slug: 'welcome/contribute' },
+					],
+				},
+				{
+					label: 'Docs',
+					collapsed: true,
+					items: [
+								{ label: 'Getting Started', slug: 'docs/getting-started' },
+								{ label: 'Models', slug: 'docs/models' },
+								{ label: 'Commands', slug: 'docs/commands' },
+								{ label: 'Scripts', slug: 'docs/scripts' },
+								{ label: '.hyp Format', slug: 'docs/hyp-format' },
+								{ label: 'Blender Scripts', slug: 'docs/blender-scripts' },
+
+						{
+							label: 'ref',
+							collapsed: true,
+							items: [
+								// Each item here is one entry in the navigation menu.
+								{ label: '-Index', slug: 'ref' },
+								{ label: 'Action', slug: 'ref/action' },
+								{ label: 'Anchor', slug: 'ref/anchor' },
+								{ label: 'App', slug: 'ref/app' },
+								{ label: 'Audio', slug: 'ref/audio' },
+								{ label: 'Avatar', slug: 'ref/avatar' },
+								{ label: 'Collider', slug: 'ref/collider' },
+								{ label: 'Group', slug: 'ref/group' },
+								{ label: 'LOD', slug: 'ref/lod' },
+								{ label: 'Material', slug: 'ref/material' },
+								{ label: 'Mesh', slug: 'ref/mesh' },
+								{ label: 'Node', slug: 'ref/node' },
+								{ label: 'Num', slug: 'ref/num' },
+								{ label: 'Player', slug: 'ref/player' },
+								{ label: 'Props', slug: 'ref/props' },
+								{ label: 'rigidbody', slug: 'ref/rigid-body' },
+								{ label: 'UI', slug: 'ref/ui' },
+								{ label: 'UIText', slug: 'ref/ui-text' },
+								{ label: 'UIView', slug: 'ref/ui-view' },
+								{ label: 'UIImage', slug: 'ref/ui-image' },
+								{ label: 'World', slug: 'ref/world' },
+							],
+						},
 					],
 				},
 				{
@@ -76,80 +118,24 @@ export default defineConfig({
 
 					],
 				},
+				
 				{
-					label: 'Setup',
+					label: 'Guides/Resources',
 					items: [
-						{ label: 'Quick Start👩‍💻🚀 ', slug: 'setup/quickstart' },
-						{ label: 'Detailed Installation 👶🤝', slug: 'setup/detailed' },
-
+						// Each item here is one entry in the navigation menu.
 						{
-							label: 'v2 Hosting',
+							label: 'V2 Hosting',
 							collapsed: true,
 							items: [
 								{ label: 'Self Hosting', slug: 'hosting/self' },
 								{ label: 'Hosting Providers', slug: 'hosting/providers' },
 							],
 						},
-					],
-				},
-				{
-					label: 'FAQs',
-					collapsed: true,
-					items: [
-						{ label: 'Developer FAQs', slug: 'faq/developer' },
-						{ label: 'Creator FAQs', slug: 'faq/creator' },
-					],
-				},
-				{
-					label: 'Hyperfy v2 Docs',
-					collapsed: true,
-					items: [
-								{ label: 'Getting Started', slug: 'docs/getting-started' },
-								{ label: 'Models', slug: 'docs/models' },
-								{ label: 'Commands', slug: 'docs/commands' },
-								{ label: 'Scripts', slug: 'docs/scripts' },
-								{ label: '.hyp Format', slug: 'docs/hyp-format' },
-								{ label: 'Blender Scripts', slug: 'docs/blender-scripts' },
-
-						{
-							label: 'ref',
-							collapsed: true,
-							items: [
-								// Each item here is one entry in the navigation menu.
-								{ label: '-Index', slug: 'ref' },
-								{ label: 'Action', slug: 'ref/action' },
-								{ label: 'Anchor', slug: 'ref/anchor' },
-								{ label: 'App', slug: 'ref/app' },
-								{ label: 'Audio', slug: 'ref/audio' },
-								{ label: 'Avatar', slug: 'ref/avatar' },
-								{ label: 'Collider', slug: 'ref/collider' },
-								{ label: 'Group', slug: 'ref/group' },
-								{ label: 'LOD', slug: 'ref/lod' },
-								{ label: 'Material', slug: 'ref/material' },
-								{ label: 'Mesh', slug: 'ref/mesh' },
-								{ label: 'Node', slug: 'ref/node' },
-								{ label: 'Num', slug: 'ref/num' },
-								{ label: 'Player', slug: 'ref/player' },
-								{ label: 'Props', slug: 'ref/props' },
-								{ label: 'rigidbody', slug: 'ref/rigid-body' },
-								{ label: 'UI', slug: 'ref/ui' },
-								{ label: 'UIText', slug: 'ref/ui-text' },
-								{ label: 'UIView', slug: 'ref/ui-view' },
-								{ label: 'UIImage', slug: 'ref/ui-image' },
-								{ label: 'World', slug: 'ref/world' },
-							],
-						},
-					],
-				},
-				{
-					label: 'Guides/Resources',
-					items: [
-						// Each item here is one entry in the navigation menu.
-
 						{
 							label: 'Coding',
 							collapsed: true,
 							items: [
+								
 
 								{ label: 'Coding Resources', slug: 'guides/coding' },
 								{ label: 'Coding with AI', slug: 'guides/coding/ai' },
@@ -213,9 +199,16 @@ export default defineConfig({
 								{ label: 'AR', slug: 'guides/webxr/ar' },
 							],
 						},
+						{
+							label: 'Misc',
+							collapsed: true,
+						   items: [
+							   { label: 'History of Hyperfy', slug: 'welcome/hyperfy-history' },
+							   { label: 'Community HackMDs', slug: 'guides/hackmd' },
+							   { label: 'Various Articles', slug: 'guides/articles' },
+						   ]
+					   },
 
-						{ label: 'Community HackMDs', slug: 'guides/hackmd' },
-						{ label: 'Various Articles', slug: 'guides/articles' },
 					],
 				},
 
@@ -226,10 +219,25 @@ export default defineConfig({
 						{ label: '$Hyper Token', slug: 'token/hyper' },
 					],
 				},
-				// {
-				// 	label: 'Resources',
-				// 	autogenerate: { directory: 'resources' },
-				// },
+
+				{
+					label: 'DAO',
+					collapsed: true,
+					items: [
+						{ label: 'Overview', slug: 'dao/overview' },
+						{ label: 'Proposals', slug: 'dao/proposals' },
+
+					]
+				},
+				{
+					label: 'FAQ',
+					collapsed: true,
+					items: [
+						{ label: 'Developer FAQs', slug: 'faq/developer' },
+						{ label: 'Creator FAQs', slug: 'faq/creator' },
+					],
+				},
+
 			],
 		}),
 	],
